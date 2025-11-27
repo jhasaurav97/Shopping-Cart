@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop | Cart</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="cart.css" />
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  </head>
+  <body>
+    <header class="head">
+      <div class="top-container">
+        <div class="logo">
+          <a href="/">Shopping Cart</a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="../auth/login.html">Login</a></li>
+            <li><a href="../auth/signup.html">Signup</a></li>
+            <li><a href="cart.html">My Cart</a></li>
+            <li><a href="../profile/profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-container">
+      <h1>My Cart</h1>
+      <div class="products-info">
+        <div class="cart-content">
+          <div class="product-grid">
+            <!-- <div class="product-card">
+              <img
+                src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png"
+                alt="Shirt"
+              />
+              <div class="desc">
+                <p class="title">Title : Shirt</p>
+                <p class="price">Price : $100</p>
+                <button class="cart-btn">Remove From Cart</button>
+            </div>
+            </div> -->
+
+            <!-- <div class="product-card">
+                <img
+                  src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png"
+                  alt="Shirt"
+                />
+                <div class="desc">
+                  <p class="title">Title : Shirt</p>
+                  <p class="price">Price : $100</p>
+                  <button class="cart-btn">Remove From Cart</button>
+              </div>
+              </div> -->
+
+            <!-- <div class="product-card">
+                <img
+                  src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png"
+                  alt="Shirt"
+                />
+                <div class="desc">
+                  <p class="title">Title : Shirt</p>
+                  <p class="price">Price : $100</p>
+                  <button class="cart-btn">Remove From Cart</button>
+              </div>
+              </div> -->
+
+            <!-- <div class="product-card">
+                <img
+                  src="https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_t.png"
+                  alt="Shirt"
+                />
+                <div class="desc">
+                  <p class="title">Title : Shirt</p>
+                  <p class="price">Price : $100</p>
+                  <button class="cart-btn">Remove From Cart</button>
+              </div>
+              </div> -->
+          </div>
+        </div>
+        <div class="checkout-box">
+          <h3>Checkout List</h3>
+          <div class="checkout-container">
+            <!-- <div class="products-details">
+              <p class="items">
+                <span>Item1</span>
+                <span>$100</span>
+              </p>
+            </div> -->
+          </div>
+            <div class="priceTotal">
+              <!-- <p class="total-price">
+                <span>Total</span>
+                <span>$0</span>
+              </p> -->
+            </div>
+          <button id="rzp-button" class="checkout-btn">Click To Checkout</button>
+        </div>
+      </div>
+    </main>
+
+    
+    <script src="cart.js"></script>
+  </body>
+</html>

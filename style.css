@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+.head{
+    padding: 20px;
+    background: #000000;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 50px;
+}
+
+.logo a{
+    font-size: 24px;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}
+
+.navbar .nav-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    transition: color 0.3s ease;
+}
+
+.nav-list li a:hover {
+    color: #ffffff;
+}
+
+main{
+    position: relative;
+}
+
+.left-content{
+    margin: 40px 0 0 50px;
+}
+
+.left-content h1{
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.left-content p{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.left-content button{
+    font-size: 18px;
+    padding: 10px 50px;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+.left-content button:hover {
+    transform: scale(1.05);
+}
+
+.left-content .login-btn{
+    margin-right: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.left-content .sign-btn{
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.left-content .login-btn:hover {
+    background-color: #222;
+}
+
+.left-content .sign-btn:hover {
+    background-color: #f2f2f2;
+}
+
+.right-img{
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+    top: 120px;
+    right: 0;
+}
+
+.right-img img{
+    width: 80%;
+    transition: transform 0.4s ease;
+}
+
+.right-img img:hover {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .left-content {
+        margin: 20px auto;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .left-content h1 {
+        font-size: 40px;
+    }
+
+    .left-content p {
+        font-size: 20px;
+    }
+
+    .right-img {
+        position: static;
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .right-img img {
+        width: 80%;
+    }
+
+    .top-container {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-content h1 {
+        font-size: 32px;
+    }
+
+    .left-content p {
+        font-size: 18px;
+    }
+
+    .left-content button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

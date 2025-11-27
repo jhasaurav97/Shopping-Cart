@@ -1,0 +1,54 @@
+form{
+    padding: 30px 60px 10px 60px;
+    width: 100%;
+}
+
+form h2{
+    font-weight: 400;
+    font-size: 30px;
+}
+
+form input{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+form button{
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+#profileForm h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#editForm h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#editForm button{
+    display: block;
+    width: 250px;
+}
+
+#logout{
+    margin: 0 0 30px 60px;
+    font-size: 18px;
+    width: 250px;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    cursor: pointer;
+}

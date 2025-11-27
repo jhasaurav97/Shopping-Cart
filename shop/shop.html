@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeShop | Shop</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="shop.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    
+    <header class="head">
+      <div class="top-container">
+        <div class="logo">
+          <a href="/">MeShop.</a>
+        </div>
+        <nav class="navbar">
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="../auth/login.html">Login</a></li>
+            <li><a href="../auth/signup.html">Signup</a></li>
+            <li><a href="../cart/cart.html">My Cart</a></li>
+            <li><a href="../profile/profile.html">Profile</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="shop-container">
+      
+      <aside class="sidebar">
+        <div class="filter-group color-filter">
+          <h4>Colors</h4>
+          <label><input type="checkbox" value="red" /> Red</label>
+          <label><input type="checkbox" value="blue" /> Blue</label>
+          <label><input type="checkbox" value="green" /> Green</label>
+          <label><input type="checkbox" value="black" /> Black</label>
+          <label><input type="checkbox" value="white" /> White</label>
+        </div>
+
+        <div class="filter-group size-filter">
+          <h4>Sizes</h4>
+          <label><input type="checkbox" value="S" /> S</label>
+          <label><input type="checkbox" value="M" /> M</label>
+          <label><input type="checkbox" value="L" /> L</label>
+          <label><input type="checkbox" value="XL" /> XL</label>
+        </div>
+
+        <div class="filter-group">
+          <h4>Rating</h4>
+          <input
+            type="range"
+            id="ratingRange"
+            min="0"
+            max="5"
+            step="1"
+            value="0"
+          />
+          <div class="range-labels">
+            <span>0</span>
+            <span>5</span>
+          </div>
+        </div>
+
+        <div class="filter-group price-filter">
+          <h4>Price Range</h4>
+          <label><input type="checkbox" value="0-25" /> $0 to $25</label>
+          <label><input type="checkbox" value="25-50" /> $25 to $50</label>
+          <label><input type="checkbox" value="50-100" /> $50 to $100</label>
+          <label><input type="checkbox" value="100+" /> $100 onwards</label>
+        </div>
+
+        <button class="apply-btn">Apply Filter</button>
+      </aside>
+
+      
+      <main class="main-content">
+        <!-- Search Bar -->
+        <div class="search-bar">
+          <input type="text" id="search-products" placeholder="Search" />
+        </div>
+
+        <!-- Category Buttons -->
+        <div class="category-tabs">
+          <button class="active filter-btn">All</button>
+          <button class="filter-btn">Mens</button>
+          <button class="filter-btn">Womens</button>
+          <button class="filter-btn">Jewellery</button>
+          <button class="filter-btn">Electronics</button>
+        </div>
+
+        <!-- Products Section -->
+        <section class="product-section">
+          <h2>Men’s Clothing</h2>
+          <div class="product-grid">
+            <!-- add products card dynamic  -->
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="shop.js"></script>
+  </body>
+</html>

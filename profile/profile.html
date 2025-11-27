@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeShop | Profile</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../auth/auth.css">
+</head>
+<body>
+    <header class="head">
+        <div class="top-container">
+            <div class="logo">
+                <a href="/">Shopping Cart</a>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <form id="profileForm">
+            <h2>My Profile</h2>
+            <div class="form-control">
+                <input type="text" id="fName" placeholder="First Name" required/>
+                <input type="text" id="lName" placeholder="Last Name" required/>
+            </div>
+            <button>Save Info</button>
+        </form>
+
+        <form id="editForm">
+            <h2>Edit Password</h2>
+            <div class="form-control">
+                <input type="password" id="oldPassword" placeholder="Old Password" required/>
+                <input type="password" id="newPassword" placeholder="New Password" required/>
+                <input type="password" id="confirmPassword" placeholder="Confirm New Password" required/>
+            </div>
+            <button id="chngePassword">Change Password</button>
+        </form>
+        <button id="logout">Logout</button>
+    </main>
+
+    <script src="profile.js"></script>
+</body>
+</html>
