@@ -5,6 +5,12 @@ This project covers authentication, API integration, filtering, cart management,
 
 ---
 
+## 🔗 Live Demo  
+👉 **Visit the live deployed website:**  
+https://stalwart-cascaron-e77564.netlify.app/
+
+---
+
 ## 🚀 Features
 
 ### 🔐 User Authentication
